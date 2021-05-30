@@ -13,7 +13,7 @@ router.get('/about', (req, res) => {
 
 
 
-router.get('/', (req, res) => {
+router.get('/signup', (req, res) => {
     // console.log(signupPath)
     res.render('signup')
 })
@@ -22,7 +22,7 @@ router.get("/login", (req, res) => {
     res.render('login')
 })
 
-router.get("/homepage", (req, res) => {
+router.get("/", (req, res) => {
     res.render("navbar")
 })
 
@@ -49,7 +49,7 @@ router.post('/signup', async (req, res) => {
 
             });
             var mailOptions = {
-                from: "rgp02071993@gmail.com",
+                from: "vaibhavpalve1234@gmail.com",
                 to: req.body.email,
                 subject: "sending mail using nodejs",
                 text: `Your userEmail is ${req.body.email} and password is ${req.body.password}`

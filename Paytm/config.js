@@ -1,6 +1,6 @@
 var PaytmConfig = {
-    mid: "NzpRJu13456737975408",
-    key: "UC9@ao7Liav&Eo_B",
+    mid: "rxLKaK21643477818237",
+    key: "@jlOshNvfto1mG%W",
     website: "WEBSTAGING",
-};
-module.exports.PaytmConfig = PaytmConfig;
+  };
+  module.exports.PaytmConfig = PaytmConfig;
