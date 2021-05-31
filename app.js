@@ -36,6 +36,7 @@ const facebookroutes = require('./api/routes/facebookroute')
 const adminroutes = require('./api/routes/admin')
 const bookaddroutes = require('./api/routes/addbookroute')
 const paymentroutes = require('./api/routes/payment')
+const contact = require('./api/routes/contact')
 //admin side api
 const productroutes = require('./api/routes/product')
 
@@ -65,6 +66,7 @@ app.use('/', productroutes)
 
 // for getting all the orders made:
 
+// app.use('/', contact)
 
 
 app.use((req, res, next) => {

@@ -11,12 +11,124 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <title>HOME</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://i.postimg.cc/j584FvRh/1.jpg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color: #fff;
+text-decoration: none;
+padding: 5px 20px;
+font-family: poppins;
+font-size: 16px;
+text-transform: uppercase;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100%;
+    padding: 15px 0;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+}
+
+/*resposive*/
+
+@media (max-width:600px){
+    .wrapper {
+width: 100%;
+}
+.logo {
+float: none;
+width: 50%;
+text-align: center;
+margin: auto;
+}
+img {
+width: ;
+}
+.nav-area {
+float: none;
+margin-top: 0;
+}
+    .nav-area li a {
+padding: 5px;
+font-size: 11px;
+}
+.nav-area {
+text-align: center;
+}
+    .welcome-text {
+width: 100%;
+height: auto;
+margin: 30% 0;
+}
+    .welcome-text h1 {
+font-size: 30px;
+}
+}
+
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">BOOKS4U</a>
+            <a class="navbar-brand" href="#">life is book</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -39,19 +151,32 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/admin">ADMIN</a>
                     </li>
-
-
-
-
-
                 </ul>
 
             </div>
         </div>
     </nav>
+        <header>
+        <div class="wrapper">
+    <ul class="nav-area">
+    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+    <li><a class="nav-link" href="/about">About</a></li>
+    <li><a class="nav-link" href="/SIGNUP">SIGNUP</a></li>
+    <li><a class="nav-link" href="/LOGIN">LOGIN</a></li>
+    <li><a class="nav-link" href="/admin">ADMIN</a></li>
+    </ul>
+    </div>
+    <div class="welcome-text">
+            <h1>
+    We are creative</h1>
+    {{!-- <a class="nav-link" href="/contact">Contact US</a> --}}
+    <a class="nav-link" href="#">Contact US</a>
+        </div>
+    </header>
+
     <style>
         body {
-            background-image: url('https://cdn.pixabay.com/photo/2016/02/16/21/07/books-1204029_960_720.jpg');
+            background-color: black;
         }
     </style>
 

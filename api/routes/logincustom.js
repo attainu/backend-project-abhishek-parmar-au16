@@ -73,11 +73,6 @@ router.post('/signup', async (req, res) => {
 
             // implementing hashing of password
 
-
-
-
-
-
             const registered = await registerUser.save()
             res.status(201).render("login");
 

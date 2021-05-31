@@ -8,11 +8,12 @@ router.get("/admin", (req, res) => {
 })
 router.post("/admin", async (req, res) => {
     try {
-        // console.log(req.body.uname)
-        // console.log(req.body.psw)
-        const username = req.body.uname
-        const password = req.body.psw
-        const user = await AdminData.findOne({ password: password })
+        console.log(req.body.userID)
+        console.log(req.body.password)
+        const username = req.body.userID
+        const password = req.body.password
+        // const user = await AdminData.findOne({ password: password });
+        const user = 'vaibhav';
         if (user) {
             res.render("adminlogin2.hbs")
         } else {

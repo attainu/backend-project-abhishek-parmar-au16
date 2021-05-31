@@ -5,5 +5,5 @@ const usersSchema = new mongoose.Schema({
 
 
 });
-const Admindata = new mongoose.model("Admindata", usersSchema);
-module.exports = Admindata
+const admindata = new mongoose.model("Admindata", usersSchema);
+module.exports = admindata
