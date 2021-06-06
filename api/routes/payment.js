@@ -15,8 +15,7 @@ router.post("/paynow", [parseUrl, parseJson], (req, res) => {
     // Route for making payment
 
     var paymentDetails = {
-      // amount: req.body.amount,
-      amount: res.send("200"),
+      amount: req.body.amount,
       customerId: req.body.name,
         customerEmail: req.body.email,
         customerPhone: req.body.phone
