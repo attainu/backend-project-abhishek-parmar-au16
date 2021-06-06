@@ -15,8 +15,9 @@ router.post("/paynow", [parseUrl, parseJson], (req, res) => {
     // Route for making payment
 
     var paymentDetails = {
-        amount: req.body.amount,
-        customerId: req.body.name,
+      // amount: req.body.amount,
+      amount: res.send("200"),
+      customerId: req.body.name,
         customerEmail: req.body.email,
         customerPhone: req.body.phone
     }
@@ -31,7 +32,7 @@ router.post("/paynow", [parseUrl, parseJson], (req, res) => {
         params['ORDER_ID'] = 'TEST_' + new Date().getTime();
         params['CUST_ID'] = paymentDetails.customerId;
         params['TXN_AMOUNT'] = paymentDetails.amount;
-        params['CALLBACK_URL'] = 'http://localhost:3000/callback';
+        params['CALLBACK_URL'] = 'https://www.google.com/';
         params['EMAIL'] = paymentDetails.customerEmail;
         params['MOBILE_NO'] = paymentDetails.customerPhone;
 

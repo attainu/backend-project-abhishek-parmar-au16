@@ -1,12 +1,14 @@
 {
+<<<<<<< HEAD
   "name": "my-ebook-hub",
+=======
+  "name": "my-ebook-hub1",
+>>>>>>> 7514e5dfb664bd3c0741a1a91b63b246046907b1
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js",
-    "dev": "nodemon app.js "
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",

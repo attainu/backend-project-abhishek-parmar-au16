@@ -9,7 +9,7 @@ const Register = require('./models/register')
 const path = require("path")
 const hbs = require("hbs")
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 const publicPath = path.join(__dirname, "public")
 
 // to setup the view engine
