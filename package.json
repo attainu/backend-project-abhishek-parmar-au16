@@ -1,8 +1,8 @@
 {
-  "name": "bookshopingapp",
+  "name": "my-ebook-hub",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "node test.js",
@@ -17,7 +17,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
-    "hbs": "^4.1.1",
+    "hbs": "^4.1.1", 
     "mongoose": "^5.11.15",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
