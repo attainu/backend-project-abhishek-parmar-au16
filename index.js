@@ -84,6 +84,6 @@ app.use((error, req, res, next) => {
     })
 })
 
-app.listen(port, () => {
+app.listen(proces.env.PORT || port, () => {
     console.log(`listening to port ${port}`)
 })
